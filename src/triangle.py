@@ -10,12 +10,12 @@ class Triangle(Figure):
         self.c_side = c_side
         self.check_if_can_create_triangle(a_side, b_side, c_side)
 
-    def get_area(self) -> float:
+    def get_area(self):
         half_per = self.get_perimeter() / 2
         area = math.sqrt(half_per * (half_per - self.a_side) * (half_per - self.b_side) * (half_per - self.c_side))
         return round(area, 2)
 
-    def get_perimeter(self) -> int:
+    def get_perimeter(self):
         return self.a_side + self.b_side + self.c_side
 
     @staticmethod

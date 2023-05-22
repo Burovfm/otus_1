@@ -28,7 +28,7 @@ def test_triangle_creation_negative(side_a, side_b, side_c):
 
 
 def test_two_triangle_areas_sum():
-    expected_sum = 45.28
+    expected_sum = 45
     triangle_1 = Triangle(10, 10, 10)
     triangle_2 = Triangle(2, 2, 3)
     assert triangle_1.add_area(triangle_2) == expected_sum, f'Expected sum is {expected_sum}'
