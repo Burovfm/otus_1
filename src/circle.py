@@ -10,7 +10,7 @@ class Circle(Figure):
         if radius <= 0:
             raise ValueError(f'Pending radius >0, got {radius}')
 
-    def get_area(self) -> float:
+    def get_area(self):
         return round(pi * (self.radius ** 2), 2)
 
     def get_perimeter(self):
